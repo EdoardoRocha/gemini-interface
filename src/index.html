@@ -71,18 +71,18 @@
     </aside>
     <main id="conteudo-principal">
         <div id="mensagem-inicial">
-
             <p>
                 <img src="./assets/imgs/google-gemini.png" alt="Simbolo do Gemini">Olá, Edoardo
             </p>
             <h1>Por onde começamos?</h1>
         </div>
         <div id="pesquisa">
-            <input type="text" name="pedir" placeholder="Peça ao Gemini">
+            <textarea rows="4" style="resize: vertical;" cols="50" placeholder="Peça ao Gemini"></textarea>
             <div id="icones-pesquisa">
                 <div id="pesquisa-opcoes">
                     <div class="lado-esquerdo" id="icones-iniciais">
                         <span class="material-symbols-outlined add cursor">Add</span>
+                        <p class="material-symbols-outlined add cursor" id="addSmall">Add</p>
                         <span class="material-symbols-outlined cursor">Tune</span>
                         <span class="tune cursor">Ferramentas</span>
                     </div>
@@ -94,6 +94,7 @@
                         <option value="Rapido">Rápido</option>
                     </select>
                     <span class="material-symbols-outlined cursor">Mic</span>
+                    <span class="material-symbols-outlined" id="btnSend">send</span>
                 </div>
             </div>
         </div>

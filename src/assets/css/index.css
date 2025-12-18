@@ -100,8 +100,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-image: conic-gradient(
-      var(--google-red) 0deg 90deg,
+  background-image: conic-gradient(var(--google-red) 0deg 90deg,
       var(--google-blue) 90deg 180deg,
       var(--google-green) 180deg 270deg,
       var(--google-yellow) 270deg 360deg);
@@ -318,6 +317,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 }
 
 #mensagem-inicial img {
@@ -357,7 +357,7 @@ body {
   width: 100%;
 }
 
-#pesquisa input {
+#pesquisa textarea {
   background: transparent;
   border: none;
   outline: none;
@@ -367,6 +367,11 @@ body {
   align-self: flex-start;
   margin-left: 25px;
   margin-top: 40px;
+  width: 90%;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  border-radius: 4px;
+  resize: none;
 }
 
 #pesquisa .add {
@@ -409,14 +414,66 @@ body {
   cursor: pointer;
 }
 
+#btnSend {
+  display: none;
+}
 @media (max-width: 900px) {
   body {
-    grid-template-areas: 
+    grid-template-areas:
       'cabecalho cabecalho'
       'conteudo conteudo'
       'conteudo conteudo'
     ;
+  }
+  
 
+  @media (max-width: 540px) {
+    body {
+      grid-template-areas:
+        'cabecalho cabecalho'
+        'conteudo conteudo'
+        'conteudo conteudo'
+      ;
+    }
+    
+    #cabecalho {
+      position: fixed;
+      width: 100%;
+    }
+
+    #mensagem-inicial img {
+      display: none;
+    }
+
+    #mensagem-inicial h1{
+      font-size: 2em;
+    }
+
+    #pesquisa {
+      position: fixed;
+      bottom: 10px;
+    }
+
+  }
+  
+  #btnSend {
+    display: block;
+    padding-left: 10px;
+  }
+  #modulos {
+    display: none;
+  }
+  #atalhos {
+    font-size: 1em;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 150px;
+  }
+  #atalhos div {
+    margin: 0;
+    width: 150px;
   }
 
   #menu-lateral {
@@ -426,4 +483,14 @@ body {
   #menu-icone {
     display: block;
   }
+
+  #icones-iniciais span {
+    display: none;
+  }
+
+  #addSmall {
+    display: block;
+    margin-left: 12px
+  }
+
 }
