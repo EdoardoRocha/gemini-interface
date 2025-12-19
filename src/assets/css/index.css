@@ -494,3 +494,39 @@ body {
   }
 
 }
+.mensagens {
+  display: none;
+}
+
+[data-dest] {
+  width: 70%;
+  margin-bottom: 40%;
+}
+
+[gemini-conversas] {
+  display: flex;
+  flex-direction: column;
+}
+
+[gemini-conversa1] {
+  align-self: flex-end;
+  width: 50%;
+  background-color: var(--cor1);
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+[gemini-conversa2] {
+  align-self: flex-start;
+  width: 50%;
+  background-color: var(--cor1);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor3);
+}

@@ -9,7 +9,8 @@
 
 <body>
     <header id="cabecalho">
-        <p class="lado-esquerdo"><span class="material-symbols-outlined" id="menu-icone">Menu</span>Gemini</p>
+        <p class="lado-esquerdo" ><span class="material-symbols-outlined"
+                id="menu-icone">Menu</span><span id="menu-icone-js" off="/">Gemini</span></p>
         <div class="perfil">
             PRO
             <div class="conic-gradient">
@@ -18,9 +19,9 @@
             </div>
         </div>
     </header>
-    <aside id="menu-lateral">
+    <aside id="menu-lateral" >
         <div id="menu-pesquisa">
-            <span class="material-symbols-outlined cursor">Menu</span>
+            <span class="material-symbols-outlined cursor" id="menu-aside">Menu</span>
             <span class="material-symbols-outlined cursor">Search</span>
         </div>
         <div id="menu-nova-conversa">
@@ -48,18 +49,8 @@
         <p id="menu-conversas-p">Conversas</p>
         <nav id="menu-conversas">
             <ul id="conversas">
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
-                <li>Alinhamento Flexbox: Lado a Lado e Extremidades</li>
+                <li><a href="./paginas/conversa.html" link-dest>Conversa delicada: será que um dia consigo?</a></li>
+                <li><a href="./paginas/conversa2.html" link-dest>A vida é boa: discussão inútil</a></li>
             </ul>
         </nav>
         <div id="menu-configuracoes">
@@ -70,6 +61,7 @@
         </div>
     </aside>
     <main id="conteudo-principal">
+        <section data-dest class="mensagens"></section>
         <div id="mensagem-inicial">
             <p>
                 <img src="./assets/imgs/google-gemini.png" alt="Simbolo do Gemini">Olá, Edoardo
