@@ -1,12 +1,12 @@
 {
   "name": "gemini-interface",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "webpack-dev-server",
-    "buid": "webpack"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

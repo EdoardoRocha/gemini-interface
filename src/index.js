@@ -1,2 +1,2 @@
 import './assets/css/index.css';
-import './assets/js/teste.js';
+import './assets/js/navegacao.js';

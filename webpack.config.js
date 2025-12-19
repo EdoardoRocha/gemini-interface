@@ -1,4 +1,4 @@
-import path from "path";
+import path, { dirname } from "path";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from "html-webpack-plugin";
@@ -7,10 +7,11 @@ import TerserPlugin from "terser-webpack-plugin";
 import HtmlMinifierTerser from 'html-minifier-terser';
 import { fileURLToPath } from "url";
 
-const __dirname = fileURLToPath(import.meta.url)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         publicPath: '/',
